@@ -1,0 +1,51 @@
+<div class="card">
+  <div class="card-body">
+
+  <form>
+    <h3>New Student</h3>
+  <div class="d-flex justify-content-around">
+    <div style="width: 20%;">
+      <label class="form-label">STUDENT ID NO: </label>
+      <input class="form-control" placeholder="ex: 45000">
+    </div>
+
+    <div style="width: 50%">
+      <label class="form-label">STUDENT NAME: </label>
+      <input class="form-control" placeholder="ex: A.B.C. Bandara">
+    </div>
+    <div style="width: 20%">
+      <label class="form-label">AGE: </label>
+      <input class="form-control" >
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-around">
+  <div style="width: 97%; margin-top: 15px">
+    <label class="form-label">ADDRESS:</label>
+    <textarea class="form-control" rows="2" placeholder=":city name:"></textarea>
+  </div>
+  </div>
+    <div class="d-flex justify-content-around">
+      <div style="width: 97%; margin-top: 15px">
+        <label class="form-label">SUBJECT STREAM:</label>
+          <select class="form-select" aria-label="Default select example">
+      <option selected>Economics</option>
+      <option value="2">Business Studies</option>
+      <option value="3">Accounting</option>
+      <option value="4">English</option>
+          </select>
+      </div>
+    </div>
+
+    <div>
+      <button typem="button" class="btn btn-warning save-btn" >
+        <p>ADD</p>
+      </button>
+      <button type="button" class="btn btn-warning save-btn" (click)="goBack()">Back</button>
+      <button type="button" class="btn btn-warning save-btn">Clear All</button>
+    </div>
+
+    </form>
+
+  </div>
+</div>

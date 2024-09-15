@@ -1,0 +1,31 @@
+<div class="card">
+  <div class="card-body">
+    <form [formGroup] ="calculateForm">
+      <div class="d-flex justify-content-around">
+
+        <div style="width: 30%;">
+          <label class="form-label">First Value: </label>
+          <input class="form-control" formControlName ="firstValue" >
+        </div>
+
+        <div style="width: 30%">
+          <label class="form-label">Second Value: </label>
+          <input class="form-control" formControlName="secondValue" >
+        </div>
+
+        <div style="width: 30%">
+          <label class="form-label">Answer: </label>
+          <input class="form-control" formControlName="answer">
+        </div>
+
+      </div>
+      <div style="float: right; margin-top: 20px">
+        <button class="btn btn-primary btn-action" (click)="action('add')">ADD</button>
+        <button class="btn btn-secondary btn-action" (click)="action('minus')">MINUS</button>
+        <button class="btn btn-warning btn-action" (click)="action('multiply')">MULTIPLY</button>
+        <button class="btn btn-success btn-action" (click)="action('divide')">DIVIDE</button>
+        <button class="btn btn-dark btn-action" (click)="clear()">Clear</button>
+      </div>
+    </form>
+  </div>
+</div>
